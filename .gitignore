@@ -1,0 +1,94 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+onpu-next/node_modules/
+onpu-next/.pnp
+onpu-next/.pnp.*
+onpu-next/.yarn/*
+!onpu-next/.yarn/patches
+!onpu-next/.yarn/plugins
+!onpu-next/.yarn/releases
+!onpu-next/.yarn/versions
+
+# Testing
+onpu-next/coverage/
+onpu-next/.nyc_output
+
+# Next.js
+onpu-next/.next/
+onpu-next/out/
+onpu-next/dist/
+onpu-next/build/
+
+# Production builds
+onpu-next/build/
+
+# Runtime data
+onpu-next/pids
+onpu-next/*.pid
+onpu-next/*.seed
+onpu-next/*.pid.lock
+
+# Environment variables
+onpu-next/.env*
+onpu-next/.env.local
+onpu-next/.env.development.local
+onpu-next/.env.test.local
+onpu-next/.env.production.local
+
+# Vercel
+onpu-next/.vercel
+
+# Cache and temporary files
+onpu-next/.cache/
+onpu-next/.eslintcache
+onpu-next/.turbo
+onpu-next/tmp/
+onpu-next/*.tmp
+onpu-next/*.log
+onpu-next/npm-debug.log*
+onpu-next/yarn-debug.log*
+onpu-next/yarn-error.log*
+onpu-next/.pnpm-debug.log*
+
+# TypeScript
+onpu-next/*.tsbuildinfo
+onpu-next/next-env.d.ts
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.pem
+
+# Serena MCP specific
+.serena/memories/
+.serena/*.tmp
+
+# Backup files
+*.bak
+*.backup
+
+# Local development
+.eslintcache
+
+# Playwright
+onpu-next/test-results/
+onpu-next/playwright-report/
+onpu-next/blob-report/
+onpu-next/playwright/.cache/
+
+# Storybook build outputs
+onpu-next/.out
+onpu-next/storybook-static
