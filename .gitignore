@@ -1,59 +1,44 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Dependencies
-onpu-next/node_modules/
-onpu-next/.pnp
-onpu-next/.pnp.*
-onpu-next/.yarn/*
-!onpu-next/.yarn/patches
-!onpu-next/.yarn/plugins
-!onpu-next/.yarn/releases
-!onpu-next/.yarn/versions
+/onpu-next/node_modules
+/onpu-next/.pnp
+/onpu-next/.pnp.*
+/onpu-next/.yarn/*
+!/onpu-next/.yarn/patches
+!/onpu-next/.yarn/plugins
+!/onpu-next/.yarn/releases
+!/onpu-next/.yarn/versions
 
 # Testing
-onpu-next/coverage/
-onpu-next/.nyc_output
+/onpu-next/coverage
 
 # Next.js
-onpu-next/.next/
-onpu-next/out/
-onpu-next/dist/
-onpu-next/build/
+/onpu-next/.next/
+/onpu-next/out/
 
-# Production builds
-onpu-next/build/
+# Production
+/onpu-next/build
 
-# Runtime data
-onpu-next/pids
-onpu-next/*.pid
-onpu-next/*.seed
-onpu-next/*.pid.lock
+# Misc
+.DS_Store
+*.pem
 
-# Environment variables
-onpu-next/.env*
-onpu-next/.env.local
-onpu-next/.env.development.local
-onpu-next/.env.test.local
-onpu-next/.env.production.local
+# Debug
+/onpu-next/npm-debug.log*
+/onpu-next/yarn-debug.log*
+/onpu-next/yarn-error.log*
+/onpu-next/.pnpm-debug.log*
+
+# Local env files
+/onpu-next/.env*.local
 
 # Vercel
-onpu-next/.vercel
-
-# Cache and temporary files
-onpu-next/.cache/
-onpu-next/.eslintcache
-onpu-next/.turbo
-onpu-next/tmp/
-onpu-next/*.tmp
-onpu-next/*.log
-onpu-next/npm-debug.log*
-onpu-next/yarn-debug.log*
-onpu-next/yarn-error.log*
-onpu-next/.pnpm-debug.log*
+/onpu-next/.vercel
 
 # TypeScript
-onpu-next/*.tsbuildinfo
-onpu-next/next-env.d.ts
+/onpu-next/*.tsbuildinfo
+/onpu-next/next-env.d.ts
 
 # IDE and editor files
 .vscode/
@@ -63,32 +48,33 @@ onpu-next/next-env.d.ts
 *~
 
 # OS generated files
-.DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
-*.pem
 
 # Serena MCP specific
 .serena/memories/
 .serena/*.tmp
 
+# Cache and temporary files
+/onpu-next/.cache/
+/onpu-next/.eslintcache
+/onpu-next/.turbo
+/onpu-next/tmp/
+
 # Backup files
 *.bak
 *.backup
 
-# Local development
-.eslintcache
-
 # Playwright
-onpu-next/test-results/
-onpu-next/playwright-report/
-onpu-next/blob-report/
-onpu-next/playwright/.cache/
+/onpu-next/test-results/
+/onpu-next/playwright-report/
+/onpu-next/blob-report/
+/onpu-next/playwright/.cache/
 
 # Storybook build outputs
-onpu-next/.out
-onpu-next/storybook-static
+/onpu-next/.out
+/onpu-next/storybook-static

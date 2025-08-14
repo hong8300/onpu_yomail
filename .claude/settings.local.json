@@ -36,7 +36,8 @@
       "mcp__serena__read_memory",
       "mcp__playwright__browser_take_screenshot",
       "mcp__playwright__browser_evaluate",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git add:*)"
     ],
     "defaultMode": "acceptEdits"
   },
