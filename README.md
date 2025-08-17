@@ -27,8 +27,8 @@
 
 ```bash
 # 1. リポジトリをクローン
-git clone https://github.com/your-username/onpu.git
-cd onpu
+git clone https://github.com/hong8300/onpu_yomail.git
+cd onpu_yomail
 
 # 2. アプリディレクトリに移動
 cd onpu-next
